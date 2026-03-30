@@ -1,0 +1,4 @@
+.git
+deploy/.dockerignore
+deploy/README.md
+*.md
