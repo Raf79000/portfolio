@@ -1,0 +1,1493 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Raphaël Daigre — Ingénieur DevOps & Full-Stack</title>
+        <meta
+            name="description"
+            content="Portfolio de Raphaël Daigre — Ingénieur DevOps et développeur Full-Stack spécialisé en containerisation, CI/CD et infrastructure cloud."
+        />
+
+        <!-- Open Graph -->
+        <meta
+            property="og:title"
+            content="Raphaël Daigre — Ingénieur DevOps & Full-Stack"
+        />
+        <meta
+            property="og:description"
+            content="Portfolio professionnel — DevOps, CI/CD, containerisation et développement Full-Stack."
+        />
+        <meta property="og:type" content="website" />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png" />
+
+        <!-- Fonts -->
+        <link
+            href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&f[]=satoshi@300,400,500,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./base.css" />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <!-- Skip link -->
+        <a href="#main" class="skip-link">Aller au contenu</a>
+
+        <!-- Header -->
+        <header class="header" id="header">
+            <div class="header-inner">
+                <a href="#" class="logo" aria-label="Raphaël Daigre - Accueil">
+                    <!-- SVG Logo: R+D monogram with infrastructure node motif -->
+                    <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        aria-hidden="true"
+                    >
+                        <rect
+                            width="32"
+                            height="32"
+                            rx="8"
+                            fill="currentColor"
+                            opacity="0.08"
+                        />
+                        <path
+                            d="M9 8h6.5a5 5 0 0 1 0 10H13l6.5 6"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            fill="none"
+                        />
+                        <circle
+                            cx="24"
+                            cy="13"
+                            r="2"
+                            fill="currentColor"
+                            opacity="0.4"
+                        />
+                        <line
+                            x1="20"
+                            y1="13"
+                            x2="22"
+                            y2="13"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            opacity="0.4"
+                        />
+                    </svg>
+                    <span>RD</span>
+                </a>
+
+                <nav class="nav" aria-label="Navigation principale">
+                    <ul class="nav-links" id="navLinks" role="list">
+                        <li>
+                            <a href="#about" data-i18n="nav.about">À propos</a>
+                        </li>
+                        <li>
+                            <a href="#skills" data-i18n="nav.skills"
+                                >Compétences</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#projects" data-i18n="nav.projects"
+                                >Projets</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#contact" data-i18n="nav.contact"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+
+                    <div class="nav-controls">
+                        <button
+                            class="lang-toggle"
+                            data-lang-toggle
+                            aria-label="Switch language"
+                        >
+                            EN
+                        </button>
+                        <button
+                            class="theme-toggle"
+                            data-theme-toggle
+                            aria-label="Changer de thème"
+                        >
+                            <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                            >
+                                <path
+                                    d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                                />
+                            </svg>
+                        </button>
+                        <button
+                            class="nav-burger"
+                            id="navBurger"
+                            aria-label="Menu"
+                            aria-expanded="false"
+                        >
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                            >
+                                <line x1="3" y1="6" x2="21" y2="6" />
+                                <line x1="3" y1="12" x2="21" y2="12" />
+                                <line x1="3" y1="18" x2="21" y2="18" />
+                            </svg>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main content -->
+        <main id="main">
+            <!-- Hero -->
+            <section class="hero">
+                <div class="hero-content">
+                    <p class="hero-eyebrow reveal" data-i18n="hero.eyebrow">
+                        Ingénieur DevOps & CI/CD
+                    </p>
+                    <h1 class="hero-title reveal">
+                        <span data-i18n="hero.title.line1">Je conçois des</span
+                        ><br />
+                        <span class="accent" data-i18n="hero.title.line2"
+                            >infrastructures</span
+                        ><br />
+                        <span data-i18n="hero.title.line3">fiables.</span>
+                    </h1>
+                    <p
+                        class="hero-description reveal"
+                        data-i18n="hero.description"
+                    >
+                        De la pipeline CI/CD au déploiement en production — je
+                        construis des systèmes robustes, automatisés et
+                        maintenables. Basé en France.
+                    </p>
+                    <div class="hero-cta reveal">
+                        <a
+                            href="#projects"
+                            class="btn btn-primary"
+                            data-i18n="hero.cta.projects"
+                        >
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                            >
+                                <rect
+                                    x="2"
+                                    y="3"
+                                    width="20"
+                                    height="14"
+                                    rx="2"
+                                />
+                                <line x1="8" y1="21" x2="16" y2="21" />
+                                <line x1="12" y1="17" x2="12" y2="21" />
+                            </svg>
+                            Voir mes projets
+                        </a>
+                        <a
+                            href="#contact"
+                            class="btn btn-secondary"
+                            data-i18n="hero.cta.contact"
+                        >
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                            >
+                                <path
+                                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            Me contacter
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About -->
+            <section class="section section-alt" id="about">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <p class="section-eyebrow" data-i18n="about.eyebrow">
+                            À propos
+                        </p>
+                        <h2 class="section-title" data-i18n="about.title">
+                            Profil
+                        </h2>
+                    </div>
+                    <div class="about-grid">
+                        <div class="about-text reveal">
+                            <p data-i18n="about.p1">
+                                Ingénieur en informatique passionné par
+                                l'automatisation et les systèmes distribués. Mon
+                                parcours en alternance chez e.SNCF Solutions m'a
+                                permis de développer une expertise solide en
+                                usine logicielle, CI/CD et infrastructure cloud.
+                            </p>
+                            <p data-i18n="about.p2">
+                                Je conçois des pipelines GitLab CI avec Dagger,
+                                j'optimise des images Docker, et je déploie des
+                                applications conteneurisées sur des
+                                architectures cloud. Mon approche est
+                                méthodique, documentée et orientée amélioration
+                                continue.
+                            </p>
+                            <p data-i18n="about.p3">
+                                En dehors du code, je m'intéresse à la mécanique
+                                automobile et moto, aux jeux vidéo (game design
+                                et systèmes) et à la nature. Curieux et
+                                rigoureux, je cherche toujours à comprendre les
+                                systèmes en profondeur.
+                            </p>
+                        </div>
+                        <div class="about-details reveal-stagger">
+                            <div class="detail-card reveal">
+                                <div
+                                    class="label"
+                                    data-i18n="about.detail.location.label"
+                                >
+                                    Localisation
+                                </div>
+                                <div
+                                    class="value"
+                                    data-i18n="about.detail.location.value"
+                                >
+                                    France
+                                </div>
+                            </div>
+                            <div class="detail-card reveal">
+                                <div
+                                    class="label"
+                                    data-i18n="about.detail.exp.label"
+                                >
+                                    Expérience
+                                </div>
+                                <div
+                                    class="value"
+                                    data-i18n="about.detail.exp.value"
+                                >
+                                    e.SNCF Solutions, Linnaeus University, L3i
+                                </div>
+                            </div>
+                            <div class="detail-card reveal">
+                                <div
+                                    class="label"
+                                    data-i18n="about.detail.focus.label"
+                                >
+                                    Spécialité
+                                </div>
+                                <div
+                                    class="value"
+                                    data-i18n="about.detail.focus.value"
+                                >
+                                    DevOps & CI/CD
+                                </div>
+                            </div>
+                            <div class="detail-card reveal">
+                                <div
+                                    class="label"
+                                    data-i18n="about.detail.os.label"
+                                >
+                                    Environnement
+                                </div>
+                                <div
+                                    class="value"
+                                    data-i18n="about.detail.os.value"
+                                >
+                                    Linux, Windows, OSX
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section class="section" id="skills">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <p class="section-eyebrow" data-i18n="skills.eyebrow">
+                            Compétences
+                        </p>
+                        <h2 class="section-title" data-i18n="skills.title">
+                            Stack technique
+                        </h2>
+                    </div>
+                    <div class="skills-grid reveal-stagger">
+                        <div class="skill-category reveal">
+                            <svg
+                                class="skill-category-icon"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                <path d="M2 17l10 5 10-5" />
+                                <path d="M2 12l10 5 10-5" />
+                            </svg>
+                            <h3 data-i18n="skills.devops.title">
+                                DevOps & Infrastructure
+                            </h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Docker Compose</span>
+                                <span class="skill-tag">GitLab CI/CD</span>
+                                <span class="skill-tag">Dagger</span>
+                                <span class="skill-tag">Traefik</span>
+                                <span class="skill-tag">NGINX</span>
+                                <span class="skill-tag">Kubernetes</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category reveal">
+                            <svg
+                                class="skill-category-icon"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                            <h3 data-i18n="skills.dev.title">Développement</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag">Angular</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">C# / Unity</span>
+                                <span class="skill-tag">HTML / CSS</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category reveal">
+                            <svg
+                                class="skill-category-icon"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                            </svg>
+                            <h3 data-i18n="skills.data.title">
+                                Données & Systèmes
+                            </h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">PostgreSQL</span>
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">MinIO / S3</span>
+                                <span class="skill-tag">Linux / Bash</span>
+                                <span class="skill-tag">Arch Linux</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category reveal">
+                            <svg
+                                class="skill-category-icon"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <circle cx="12" cy="12" r="3" />
+                                <path
+                                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+                                />
+                            </svg>
+                            <h3 data-i18n="skills.tools.title">
+                                Outils & Méthodes
+                            </h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">Jira</span>
+                                <span class="skill-tag">Confluence</span>
+                                <span class="skill-tag">Agile / Scrum</span>
+                                <span class="skill-tag">Terraform</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category reveal">
+                            <svg
+                                class="skill-category-icon"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"
+                                />
+                                <path
+                                    d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"
+                                />
+                            </svg>
+                            <h3 data-i18n="skills.learning.title">
+                                En apprentissage
+                            </h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Vagrant</span>
+                                <span class="skill-tag">ReactJS</span>
+                                <span class="skill-tag">Cisco Systems</span>
+                                <span class="skill-tag">LoRa</span>
+                                <span class="skill-tag">IoT</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category reveal">
+                            <svg
+                                class="skill-category-icon"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+                                />
+                            </svg>
+                            <h3 data-i18n="skills.practices.title">
+                                Bonnes pratiques
+                            </h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">IaC</span>
+                                <span class="skill-tag">12-Factor App</span>
+                                <span class="skill-tag">Documentation</span>
+                                <span class="skill-tag">Code Review</span>
+                                <span class="skill-tag">Tests CI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section class="section section-alt" id="projects">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <p class="section-eyebrow" data-i18n="projects.eyebrow">
+                            Projets
+                        </p>
+                        <h2 class="section-title" data-i18n="projects.title">
+                            Réalisations
+                        </h2>
+                    </div>
+                    <div class="projects-grid">
+                        <article class="project-card reveal">
+                            <div class="project-image">
+                                <svg
+                                    viewBox="0 0 640 400"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true"
+                                >
+                                    <rect
+                                        width="640"
+                                        height="400"
+                                        fill="var(--color-surface-offset)"
+                                    />
+                                    <g
+                                        transform="translate(200,100)"
+                                        stroke="var(--color-primary)"
+                                        fill="none"
+                                        stroke-width="2"
+                                        opacity="0.5"
+                                    >
+                                        <!-- Pipeline diagram -->
+                                        <rect
+                                            x="0"
+                                            y="60"
+                                            width="60"
+                                            height="40"
+                                            rx="6"
+                                        />
+                                        <text
+                                            x="30"
+                                            y="84"
+                                            fill="var(--color-text-muted)"
+                                            font-size="10"
+                                            font-family="var(--font-mono)"
+                                            text-anchor="middle"
+                                        >
+                                            Build
+                                        </text>
+                                        <line
+                                            x1="60"
+                                            y1="80"
+                                            x2="90"
+                                            y2="80"
+                                            stroke-dasharray="4"
+                                        />
+                                        <rect
+                                            x="90"
+                                            y="60"
+                                            width="60"
+                                            height="40"
+                                            rx="6"
+                                        />
+                                        <text
+                                            x="120"
+                                            y="84"
+                                            fill="var(--color-text-muted)"
+                                            font-size="10"
+                                            font-family="var(--font-mono)"
+                                            text-anchor="middle"
+                                        >
+                                            Test
+                                        </text>
+                                        <line
+                                            x1="150"
+                                            y1="80"
+                                            x2="180"
+                                            y2="80"
+                                            stroke-dasharray="4"
+                                        />
+                                        <rect
+                                            x="180"
+                                            y="60"
+                                            width="60"
+                                            height="40"
+                                            rx="6"
+                                        />
+                                        <text
+                                            x="210"
+                                            y="84"
+                                            fill="var(--color-text-muted)"
+                                            font-size="10"
+                                            font-family="var(--font-mono)"
+                                            text-anchor="middle"
+                                        >
+                                            Deploy
+                                        </text>
+                                        <!-- Nodes -->
+                                        <circle
+                                            cx="30"
+                                            cy="160"
+                                            r="8"
+                                            fill="var(--color-primary)"
+                                            opacity="0.3"
+                                        />
+                                        <circle
+                                            cx="120"
+                                            cy="160"
+                                            r="8"
+                                            fill="var(--color-primary)"
+                                            opacity="0.3"
+                                        />
+                                        <circle
+                                            cx="210"
+                                            cy="160"
+                                            r="8"
+                                            fill="var(--color-primary)"
+                                            opacity="0.3"
+                                        />
+                                        <line
+                                            x1="38"
+                                            y1="160"
+                                            x2="112"
+                                            y2="160"
+                                            stroke-dasharray="4"
+                                            opacity="0.3"
+                                        />
+                                        <line
+                                            x1="128"
+                                            y1="160"
+                                            x2="202"
+                                            y2="160"
+                                            stroke-dasharray="4"
+                                            opacity="0.3"
+                                        />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="project-body">
+                                <h3
+                                    class="project-title"
+                                    data-i18n="projects.cicd.title"
+                                >
+                                    Analyse de code augmentée par IA
+                                </h3>
+                                <p
+                                    class="project-description"
+                                    data-i18n="projects.cicd.desc"
+                                >
+                                    Conception et intégration d'un outil
+                                    d'analyse de code enrichi par intelligence
+                                    artificielle, orchestré via des pipelines
+                                    GitLab CI et Dagger, en collaboration avec
+                                    le socle IA de la SNCF.
+                                </p>
+                                <div class="project-stack">
+                                    <span class="stack-tag">GitLab CI</span>
+                                    <span class="stack-tag">Dagger</span>
+                                    <span class="stack-tag">Python</span>
+                                    <span class="stack-tag">IA / LLM</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card reveal">
+                            <div class="project-image">
+                                <svg
+                                    viewBox="0 0 640 400"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true"
+                                >
+                                    <rect
+                                        width="640"
+                                        height="400"
+                                        fill="var(--color-surface-offset)"
+                                    />
+                                    <g
+                                        transform="translate(180,80)"
+                                        stroke="var(--color-primary)"
+                                        fill="none"
+                                        stroke-width="2"
+                                        opacity="0.5"
+                                    >
+                                        <!-- Docker containers -->
+                                        <rect
+                                            x="0"
+                                            y="0"
+                                            width="80"
+                                            height="100"
+                                            rx="8"
+                                        />
+                                        <text
+                                            x="40"
+                                            y="30"
+                                            fill="var(--color-text-muted)"
+                                            font-size="9"
+                                            font-family="var(--font-mono)"
+                                            text-anchor="middle"
+                                        >
+                                            Frontend
+                                        </text>
+                                        <rect
+                                            x="10"
+                                            y="40"
+                                            width="60"
+                                            height="15"
+                                            rx="3"
+                                            fill="var(--color-primary)"
+                                            opacity="0.15"
+                                        />
+                                        <rect
+                                            x="10"
+                                            y="60"
+                                            width="60"
+                                            height="15"
+                                            rx="3"
+                                            fill="var(--color-primary)"
+                                            opacity="0.1"
+                                        />
+                                        <rect
+                                            x="10"
+                                            y="80"
+                                            width="60"
+                                            height="10"
+                                            rx="3"
+                                            fill="var(--color-primary)"
+                                            opacity="0.07"
+                                        />
+
+                                        <rect
+                                            x="100"
+                                            y="0"
+                                            width="80"
+                                            height="100"
+                                            rx="8"
+                                        />
+                                        <text
+                                            x="140"
+                                            y="30"
+                                            fill="var(--color-text-muted)"
+                                            font-size="9"
+                                            font-family="var(--font-mono)"
+                                            text-anchor="middle"
+                                        >
+                                            Backend
+                                        </text>
+                                        <rect
+                                            x="110"
+                                            y="40"
+                                            width="60"
+                                            height="15"
+                                            rx="3"
+                                            fill="var(--color-primary)"
+                                            opacity="0.15"
+                                        />
+                                        <rect
+                                            x="110"
+                                            y="60"
+                                            width="60"
+                                            height="15"
+                                            rx="3"
+                                            fill="var(--color-primary)"
+                                            opacity="0.1"
+                                        />
+                                        <rect
+                                            x="110"
+                                            y="80"
+                                            width="60"
+                                            height="10"
+                                            rx="3"
+                                            fill="var(--color-primary)"
+                                            opacity="0.07"
+                                        />
+
+                                        <rect
+                                            x="200"
+                                            y="0"
+                                            width="80"
+                                            height="100"
+                                            rx="8"
+                                        />
+                                        <text
+                                            x="240"
+                                            y="30"
+                                            fill="var(--color-text-muted)"
+                                            font-size="9"
+                                            font-family="var(--font-mono)"
+                                            text-anchor="middle"
+                                        >
+                                            Database
+                                        </text>
+                                        <ellipse
+                                            cx="240"
+                                            cy="55"
+                                            rx="25"
+                                            ry="10"
+                                            fill="var(--color-primary)"
+                                            opacity="0.1"
+                                        />
+                                        <ellipse
+                                            cx="240"
+                                            cy="75"
+                                            rx="25"
+                                            ry="10"
+                                            fill="var(--color-primary)"
+                                            opacity="0.08"
+                                        />
+
+                                        <!-- Docker whale hint -->
+                                        <path
+                                            d="M120 140 h40 v-20 h8 v-8 h8 v8 h8 v20 z"
+                                            fill="var(--color-primary)"
+                                            opacity="0.12"
+                                            stroke="none"
+                                        />
+                                        <g transform="translate(120,120)">
+                                            <rect
+                                                x="2"
+                                                y="2"
+                                                width="7"
+                                                height="6"
+                                                rx="1"
+                                                fill="var(--color-primary)"
+                                                opacity="0.2"
+                                            />
+                                            <rect
+                                                x="11"
+                                                y="2"
+                                                width="7"
+                                                height="6"
+                                                rx="1"
+                                                fill="var(--color-primary)"
+                                                opacity="0.2"
+                                            />
+                                            <rect
+                                                x="20"
+                                                y="2"
+                                                width="7"
+                                                height="6"
+                                                rx="1"
+                                                fill="var(--color-primary)"
+                                                opacity="0.2"
+                                            />
+                                            <rect
+                                                x="29"
+                                                y="2"
+                                                width="7"
+                                                height="6"
+                                                rx="1"
+                                                fill="var(--color-primary)"
+                                                opacity="0.2"
+                                            />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="project-body">
+                                <h3
+                                    class="project-title"
+                                    data-i18n="projects.fullstack.title"
+                                >
+                                    Application web Full-Stack conteneurisée
+                                </h3>
+                                <p
+                                    class="project-description"
+                                    data-i18n="projects.fullstack.desc"
+                                >
+                                    Architecture complète avec frontend, backend
+                                    Node.js et base de données, entièrement
+                                    conteneurisée avec Docker Compose.
+                                    Déploiement automatisé sur cloud Azure via
+                                    GitLab CI.
+                                </p>
+                                <div class="project-stack">
+                                    <span class="stack-tag">Node.js</span>
+                                    <span class="stack-tag">Angular</span>
+                                    <span class="stack-tag">Docker</span>
+                                    <span class="stack-tag">Azure</span>
+                                    <span class="stack-tag">PostgreSQL</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card reveal">
+                            <div class="project-image">
+                                <svg
+                                    viewBox="0 0 640 400"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true"
+                                >
+                                    <rect
+                                        width="640"
+                                        height="400"
+                                        fill="var(--color-surface-offset)"
+                                    />
+                                    <g
+                                        transform="translate(140,80)"
+                                        stroke="var(--color-primary)"
+                                        fill="none"
+                                        stroke-width="2"
+                                        opacity="0.5"
+                                    >
+                                        <!-- Server rack / infra -->
+                                        <rect
+                                            x="0"
+                                            y="0"
+                                            width="120"
+                                            height="30"
+                                            rx="4"
+                                        />
+                                        <circle
+                                            cx="15"
+                                            cy="15"
+                                            r="4"
+                                            fill="var(--color-primary)"
+                                            opacity="0.3"
+                                        />
+                                        <line
+                                            x1="25"
+                                            y1="15"
+                                            x2="105"
+                                            y2="15"
+                                            stroke-dasharray="2"
+                                            opacity="0.3"
+                                        />
+
+                                        <rect
+                                            x="0"
+                                            y="40"
+                                            width="120"
+                                            height="30"
+                                            rx="4"
+                                        />
+                                        <circle
+                                            cx="15"
+                                            cy="55"
+                                            r="4"
+                                            fill="var(--color-primary)"
+                                            opacity="0.3"
+                                        />
+                                        <line
+                                            x1="25"
+                                            y1="55"
+                                            x2="105"
+                                            y2="55"
+                                            stroke-dasharray="2"
+                                            opacity="0.3"
+                                        />
+
+                                        <rect
+                                            x="0"
+                                            y="80"
+                                            width="120"
+                                            height="30"
+                                            rx="4"
+                                        />
+                                        <circle
+                                            cx="15"
+                                            cy="95"
+                                            r="4"
+                                            fill="var(--color-primary)"
+                                            opacity="0.3"
+                                        />
+                                        <line
+                                            x1="25"
+                                            y1="95"
+                                            x2="105"
+                                            y2="95"
+                                            stroke-dasharray="2"
+                                            opacity="0.3"
+                                        />
+
+                                        <!-- Arrow to Traefik/Proxy -->
+                                        <line
+                                            x1="130"
+                                            y1="55"
+                                            x2="180"
+                                            y2="55"
+                                            stroke-dasharray="4"
+                                        />
+                                        <polygon
+                                            points="178,50 188,55 178,60"
+                                            fill="var(--color-primary)"
+                                            opacity="0.3"
+                                            stroke="none"
+                                        />
+
+                                        <!-- Reverse proxy box -->
+                                        <rect
+                                            x="190"
+                                            y="20"
+                                            width="140"
+                                            height="80"
+                                            rx="8"
+                                            stroke-dasharray="6"
+                                        />
+                                        <text
+                                            x="260"
+                                            y="50"
+                                            fill="var(--color-text-muted)"
+                                            font-size="10"
+                                            font-family="var(--font-mono)"
+                                            text-anchor="middle"
+                                        >
+                                            Reverse Proxy
+                                        </text>
+                                        <text
+                                            x="260"
+                                            y="70"
+                                            fill="var(--color-primary)"
+                                            font-size="12"
+                                            font-family="var(--font-mono)"
+                                            text-anchor="middle"
+                                            opacity="0.7"
+                                        >
+                                            Traefik
+                                        </text>
+
+                                        <!-- Internet cloud -->
+                                        <text
+                                            x="160"
+                                            y="160"
+                                            fill="var(--color-text-faint)"
+                                            font-size="11"
+                                            font-family="var(--font-mono)"
+                                            text-anchor="middle"
+                                        >
+                                            NGINX • SSL • Load Balancing
+                                        </text>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="project-body">
+                                <h3
+                                    class="project-title"
+                                    data-i18n="projects.infra.title"
+                                >
+                                    Infrastructure reverse proxy & load
+                                    balancing
+                                </h3>
+                                <p
+                                    class="project-description"
+                                    data-i18n="projects.infra.desc"
+                                >
+                                    Mise en place d'une infrastructure avec
+                                    Traefik et NGINX comme reverse proxy,
+                                    gestion SSL automatique, load balancing et
+                                    routage dynamique pour des services
+                                    conteneurisés.
+                                </p>
+                                <div class="project-stack">
+                                    <span class="stack-tag">Traefik</span>
+                                    <span class="stack-tag">NGINX</span>
+                                    <span class="stack-tag">Docker</span>
+                                    <span class="stack-tag">Let's Encrypt</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card reveal">
+                            <div class="project-image">
+                                <svg
+                                    viewBox="0 0 640 400"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true"
+                                >
+                                    <rect
+                                        width="640"
+                                        height="400"
+                                        fill="var(--color-surface-offset)"
+                                    />
+                                    <g
+                                        transform="translate(160,80)"
+                                        stroke="var(--color-primary)"
+                                        fill="none"
+                                        stroke-width="2"
+                                        opacity="0.5"
+                                    >
+                                        <!-- Docker image layers -->
+                                        <rect
+                                            x="60"
+                                            y="0"
+                                            width="200"
+                                            height="30"
+                                            rx="4"
+                                            fill="var(--color-primary)"
+                                            opacity="0.05"
+                                        />
+                                        <text
+                                            x="160"
+                                            y="20"
+                                            fill="var(--color-text-faint)"
+                                            font-size="9"
+                                            font-family="var(--font-mono)"
+                                            text-anchor="middle"
+                                        >
+                                            base image — alpine
+                                        </text>
+
+                                        <rect
+                                            x="60"
+                                            y="35"
+                                            width="200"
+                                            height="30"
+                                            rx="4"
+                                            fill="var(--color-primary)"
+                                            opacity="0.08"
+                                        />
+                                        <text
+                                            x="160"
+                                            y="55"
+                                            fill="var(--color-text-muted)"
+                                            font-size="9"
+                                            font-family="var(--font-mono)"
+                                            text-anchor="middle"
+                                        >
+                                            dependencies
+                                        </text>
+
+                                        <rect
+                                            x="60"
+                                            y="70"
+                                            width="200"
+                                            height="30"
+                                            rx="4"
+                                            fill="var(--color-primary)"
+                                            opacity="0.12"
+                                        />
+                                        <text
+                                            x="160"
+                                            y="90"
+                                            fill="var(--color-text-muted)"
+                                            font-size="9"
+                                            font-family="var(--font-mono)"
+                                            text-anchor="middle"
+                                        >
+                                            build stage
+                                        </text>
+
+                                        <rect
+                                            x="60"
+                                            y="105"
+                                            width="200"
+                                            height="30"
+                                            rx="4"
+                                            fill="var(--color-primary)"
+                                            opacity="0.18"
+                                        />
+                                        <text
+                                            x="160"
+                                            y="125"
+                                            fill="var(--color-text)"
+                                            font-size="9"
+                                            font-family="var(--font-mono)"
+                                            text-anchor="middle"
+                                        >
+                                            application
+                                        </text>
+
+                                        <!-- Size comparison -->
+                                        <text
+                                            x="0"
+                                            y="170"
+                                            fill="var(--color-text-faint)"
+                                            font-size="10"
+                                            font-family="var(--font-mono)"
+                                        >
+                                            Before: 1.2GB
+                                        </text>
+                                        <line
+                                            x1="90"
+                                            y1="175"
+                                            x2="230"
+                                            y2="175"
+                                            stroke-dasharray="4"
+                                            opacity="0.3"
+                                        />
+                                        <text
+                                            x="160"
+                                            y="170"
+                                            fill="var(--color-primary)"
+                                            font-size="12"
+                                            font-family="var(--font-mono)"
+                                            font-weight="bold"
+                                            text-anchor="middle"
+                                            opacity="0.7"
+                                        >
+                                            →
+                                        </text>
+                                        <text
+                                            x="240"
+                                            y="170"
+                                            fill="var(--color-primary)"
+                                            font-size="10"
+                                            font-family="var(--font-mono)"
+                                        >
+                                            After: 89MB
+                                        </text>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="project-body">
+                                <h3
+                                    class="project-title"
+                                    data-i18n="projects.docker.title"
+                                >
+                                    Optimisation d'images Docker
+                                </h3>
+                                <p
+                                    class="project-description"
+                                    data-i18n="projects.docker.desc"
+                                >
+                                    Réduction drastique de la taille des images
+                                    Docker via multi-stage builds, base Alpine,
+                                    et bonnes pratiques de layering. Résultat :
+                                    images plus légères, builds plus rapides,
+                                    déploiements accélérés.
+                                </p>
+                                <div class="project-stack">
+                                    <span class="stack-tag">Docker</span>
+                                    <span class="stack-tag">Multi-stage</span>
+                                    <span class="stack-tag">Alpine</span>
+                                    <span class="stack-tag"
+                                        >GitLab Registry</span
+                                    >
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section class="section" id="contact">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <p class="section-eyebrow" data-i18n="contact.eyebrow">
+                            Contact
+                        </p>
+                        <h2 class="section-title" data-i18n="contact.title">
+                            Restons en contact
+                        </h2>
+                    </div>
+                    <div class="contact-content reveal">
+                        <p class="contact-text" data-i18n="contact.text">
+                            Vous avez un projet, une opportunité ou simplement
+                            envie d'échanger ? N'hésitez pas à me contacter via
+                            les canaux ci-dessous.
+                        </p>
+                        <div class="contact-links">
+                            <a
+                                href="mailto:daigre.raphael.pro@gmail.com"
+                                class="contact-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                >
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                    />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                                <div class="contact-link-text">
+                                    <span class="contact-link-label"
+                                        >Email</span
+                                    >
+                                    <span class="contact-link-value"
+                                        >daigre.raphael.pro@gmail.com</span
+                                    >
+                                </div>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/daigre-raphael-alternance-devops/"
+                                class="contact-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                >
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                    />
+                                    <rect x="2" y="9" width="4" height="12" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg>
+                                <div class="contact-link-text">
+                                    <span class="contact-link-label"
+                                        >LinkedIn</span
+                                    >
+                                    <span
+                                        class="contact-link-value"
+                                        data-i18n="contact.linkedin.value"
+                                        >Voir mon profil</span
+                                    >
+                                </div>
+                            </a>
+                            <a
+                                href="https://github.com/Raf79000"
+                                class="contact-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                >
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                    />
+                                </svg>
+                                <div class="contact-link-text">
+                                    <span class="contact-link-label"
+                                        >GitHub</span
+                                    >
+                                    <span
+                                        class="contact-link-value"
+                                        data-i18n="contact.github.value"
+                                        >Voir mes repos</span
+                                    >
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer-inner">
+                <p class="footer-text" data-i18n="footer.copy">
+                    &copy; 2026 Raphaël Daigre. Tous droits réservés.
+                </p>
+                <p class="footer-text" data-i18n="footer.built">
+                    Conçu avec PerplexityAI.
+                </p>
+            </div>
+        </footer>
+
+        <script src="./app.js" defer></script>
+        <script data-pplx-inline-edit>
+            (function () {
+                if (window === window.top) return;
+                function inlineAll(orig, clone) {
+                    if (orig.nodeType !== 1) return;
+                    try {
+                        var cs = getComputedStyle(orig);
+                        var t = "";
+                        for (var i = 0; i < cs.length; i++) {
+                            t += cs[i] + ":" + cs.getPropertyValue(cs[i]) + ";";
+                        }
+                        clone.style.cssText = t;
+                    } catch (e) {}
+                    var oc = orig.children,
+                        cc = clone.children;
+                    for (var j = 0; j < oc.length && j < cc.length; j++) {
+                        inlineAll(oc[j], cc[j]);
+                    }
+                }
+                function stripExternal(clone) {
+                    var imgs = clone.querySelectorAll("img");
+                    for (var i = 0; i < imgs.length; i++) {
+                        var s = imgs[i].getAttribute("src");
+                        if (s && !s.startsWith("data:"))
+                            imgs[i].removeAttribute("src");
+                    }
+                    var all = clone.querySelectorAll("*");
+                    for (var i = 0; i < all.length; i++) {
+                        var st = all[i].style.cssText;
+                        if (st && st.indexOf("url(") >= 0) {
+                            all[i].style.cssText = st.replace(
+                                /url\(["']?(?!data:)[^)"']*["']?\)/gi,
+                                "none",
+                            );
+                        }
+                    }
+                }
+                window.addEventListener("message", function (e) {
+                    if (
+                        !e.data ||
+                        e.data.type !== "INLINE_EDIT_CAPTURE_REQUEST"
+                    )
+                        return;
+                    var scrollX = window.scrollX || window.pageXOffset || 0;
+                    var scrollY = window.scrollY || window.pageYOffset || 0;
+                    var w = window.innerWidth,
+                        h = window.innerHeight;
+                    try {
+                        var clone = document.documentElement.cloneNode(true);
+                        var rm = clone.querySelectorAll(
+                            'script,link[rel="stylesheet"],style',
+                        );
+                        for (var i = 0; i < rm.length; i++) {
+                            rm[i].remove();
+                        }
+                        inlineAll(document.documentElement, clone);
+                        stripExternal(clone);
+                        var html = new XMLSerializer().serializeToString(clone);
+                        var svg =
+                            '<svg xmlns="http://www.w3.org/2000/svg" width="' +
+                            w +
+                            '" height="' +
+                            h +
+                            '">' +
+                            '<foreignObject width="100%" height="100%">' +
+                            '<div xmlns="http://www.w3.org/1999/xhtml" style="width:' +
+                            w +
+                            "px;height:" +
+                            h +
+                            'px;overflow:hidden">' +
+                            '<div style="transform:translate(-' +
+                            scrollX +
+                            "px,-" +
+                            scrollY +
+                            'px);transform-origin:top left">' +
+                            html +
+                            "</div></div></foreignObject></svg>";
+                        var svgUrl =
+                            "data:image/svg+xml;charset=utf-8," +
+                            encodeURIComponent(svg);
+                        var img = new Image();
+                        img.onload = function () {
+                            var c = document.createElement("canvas");
+                            c.width = w;
+                            c.height = h;
+                            c.getContext("2d").drawImage(img, 0, 0);
+                            window.parent.postMessage(
+                                {
+                                    type: "INLINE_EDIT_SCREENSHOT_RESULT",
+                                    dataUrl: c.toDataURL("image/png"),
+                                    scrollX: scrollX,
+                                    scrollY: scrollY,
+                                },
+                                "*",
+                            );
+                        };
+                        img.onerror = function () {
+                            window.parent.postMessage(
+                                {
+                                    type: "INLINE_EDIT_SCREENSHOT_RESULT",
+                                    dataUrl: null,
+                                    scrollX: scrollX,
+                                    scrollY: scrollY,
+                                },
+                                "*",
+                            );
+                        };
+                        img.src = svgUrl;
+                    } catch (err) {
+                        window.parent.postMessage(
+                            {
+                                type: "INLINE_EDIT_SCREENSHOT_RESULT",
+                                dataUrl: null,
+                                scrollX: scrollX,
+                                scrollY: scrollY,
+                            },
+                            "*",
+                        );
+                    }
+                });
+            })();
+        </script>
+    </body>
+</html>
