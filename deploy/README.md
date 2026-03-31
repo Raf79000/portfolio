@@ -13,7 +13,7 @@ Depuis le dossier `deploy/` :
 docker compose up -d --build
 ```
 
-Le site est accessible sur `http://localhost:8080`.
+Le site est accessible sur `http://localhost`.
 
 ## Commandes utiles
 
