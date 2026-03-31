@@ -10,6 +10,7 @@ COPY deploy/conf.d/default.conf /etc/nginx/conf.d/default.conf
 # Copy static site files
 COPY index.html base.css style.css app.js /usr/share/nginx/html/
 COPY favicon.svg favicon.png /usr/share/nginx/html/
+COPY sitemap.xml robots.txt /usr/share/nginx/html/
 
 EXPOSE 80 443
 
