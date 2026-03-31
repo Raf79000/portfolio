@@ -14,5 +14,5 @@ services:
       timeout: 3s
       retries: 3
     volumes:
-      - /etc/letsencrypt/live/rdaigre.fr/fullchain.pem:/etc/ssl/certs
-      - /etc/letsencrypt/live/rdaigre.fr/privkey.pem:/etc/ssl/private
+      - /etc/letsencrypt/live/rdaigre.fr/fullchain.pem:/etc/ssl/certs/fullchain.pem
+      - /etc/letsencrypt/live/rdaigre.fr/privkey.pem:/etc/ssl/private/privkey.pem
