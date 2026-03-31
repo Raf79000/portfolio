@@ -1,10 +1,11 @@
 FROM nginx:1.27-alpine
 
-# Remove default NGINX config
-RUN rm /etc/nginx/conf.d/default.conf
+# Remplace la config racine par la nôtre
+COPY deploy/nginx.conf /etc/nginx/nginx.conf
 
-# Copy custom NGINX config
-COPY deploy/nginx.conf /etc/nginx/conf.d/portfolio.conf
+# Supprime la config par défaut et copie la nôtre
+RUN rm -f /etc/nginx/conf.d/default.conf
+COPY deploy/conf.d/default.conf /etc/nginx/conf.d/default.conf
 
 # Copy static site files
 COPY index.html base.css style.css app.js /usr/share/nginx/html/
