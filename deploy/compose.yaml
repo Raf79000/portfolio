@@ -3,6 +3,7 @@ services:
     build:
       context: ..
       dockerfile: deploy/Dockerfile
+    user: "1000:1000"
     container_name: portfolio
     restart: unless-stopped
     ports:
@@ -16,3 +17,5 @@ services:
     volumes:
       - /etc/letsencrypt/live/rdaigre.fr/fullchain.pem:/etc/ssl/certs/fullchain.pem
       - /etc/letsencrypt/live/rdaigre.fr/privkey.pem:/etc/ssl/private/privkey.pem
+    security_opt:
+      - no-new-privileges:true
