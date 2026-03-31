@@ -7,8 +7,12 @@ services:
     restart: unless-stopped
     ports:
       - "80:80"
+      - "443:443"
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://localhost/"]
       interval: 30s
       timeout: 3s
       retries: 3
+    volumes:
+      - /etc/letsencrypt/live/rdaigre.fr/fullchain.pem:/etc/ssl/certs
+      - /etc/letsencrypt/live/rdaigre.fr/privkey.pem:/etc/ssl/private
